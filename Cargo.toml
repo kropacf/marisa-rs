@@ -1,0 +1,16 @@
+[package]
+name = "marisa"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace]
+members = ["marisa-sys"]
+
+[dependencies]
+smallvec = "1.13"
+libc = "0.2"
+
+[dependencies.marisa-sys]
+path = "marisa-sys"
+version = "0.1.0"
